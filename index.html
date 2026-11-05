@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stroop Exam Assignment</title>
+  <script>
+    window.onload = function() {
+      // Replace these URLs with the actual web addresses where your files are hosted:
+      const standardExamUrl = "https://sites.google.com/view/standardstrooptest/full-page-embed";
+      const invertedExamUrl = "https://sites.google.com/view/invertedstrooptest/full-page-embed";
+
+      // 50/50 Random Assignment
+      const isStandard = Math.random() < 0.5;
+      const targetUrl = isStandard ? standardExamUrl : invertedExamUrl;
+
+      // Redirect immediately
+      window.location.replace(targetUrl);
+    };
+  </script>
+</head>
+<body>
+  <p style="text-align:center; font-family:sans-serif; margin-top:20%;">
+    Assigning your exam...
+  </p>
+</body>
+</html>
